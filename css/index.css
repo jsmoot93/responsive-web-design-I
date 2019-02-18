@@ -64,8 +64,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
+}
+
+@media( max-width: 800px ) {
+    .container {
+        max-width: 800px;
+        margin: 0px 20px;
+    }
+}
+
+@media( max-width: 500px ) {
+    .container {
+        max-width: 500px;
+        margin: 0px 20px;
+    }
 }
 
 /* Header Styles */
@@ -75,6 +89,12 @@ header {
     display: flex;
 }
 
+@media( max-width: 800px ) {
+    header {
+        flex-direction: column-reverse;
+    }
+}
+
 header nav {
     margin-top: 40px; 
     width: 610px;
@@ -82,9 +102,34 @@ header nav {
     display: flex;
 }
 
+@media( max-width: 800px ) {
+    header nav {
+        width: 100%;
+    }
+}
+
+@media( max-width: 500px ) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-bottom: 1px solid gray;
+    }
+}
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+}
+
+@media( max-width: 500px ) {
+    header nav a {       
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid gray;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 header nav a:hover {
@@ -96,12 +141,33 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+@media( max-width: 800px ) {
+    header .logo {
+        width: 180px;
+        margin-left: 290px;
+    }
+}
+
+@media( max-width: 500px ) {
+    header .logo {
+      margin-left: 140px;
+        
+    }
+}
+
+
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+}
+
+@media( max-width: 800px ) {
+    .cta {
+        margin-left: 100px;
+    }
 }
 
 .cta .cta-text {
@@ -113,6 +179,12 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
+}
+
+@media( max-width: 800px ) {
+    .cta {
+        justify-content: center;
+    }
 }
 
 .cta .cta-text button {
@@ -128,6 +200,17 @@ header .logo {
 .cta .cta-text button:hover {
     background: black;
     color: white;
+}
+
+@media( max-width: 800px ) {
+    .cta img {
+        display: none;
+    }
+}
+
+.middle-img {
+    width: 100%;
+    height: auto;
 }
 
 /* Main Content Styles */
