@@ -228,6 +228,18 @@ header .logo {
     display: flex;
 }
 
+@media( max-width: 800px ) {
+    .main-content .top-content {
+        flex-direction: column;
+    }
+}
+
+@media( max-width: 800px ) {
+    .main-content .top-content .text-content {
+        padding: 20px 0px;
+    }
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
@@ -235,6 +247,18 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
+}
+
+@media( max-width: 800px ) {
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+}
+
+@media( max-width: 800px ) {
+    .main-content .bottom-content .text-content {
+        padding: 20px 0px;
+    }
 }
 
 .main-content .bottom-content p {
