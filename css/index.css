@@ -78,7 +78,21 @@ h1, h2, h3, h4, h5 {
 @media( max-width: 500px ) {
     .container {
         max-width: 500px;
-        margin: 0px 20px;
+        margin: 0px;
+    }
+}
+
+@media( max-width: 500px ) {
+    .container .main-content {
+        max-width: 500px;
+        margin: 20px;
+    }
+}
+
+@media( max-width: 500px ) {
+    .container .contact{
+        max-width: 500px;
+        margin: 50px 20px 20px 20px;
     }
 }
 
@@ -150,8 +164,7 @@ header .logo {
 
 @media( max-width: 500px ) {
     header .logo {
-      margin-left: 140px;
-        
+        margin-left: 150px; 
     }
 }
 
@@ -167,6 +180,7 @@ header .logo {
 @media( max-width: 800px ) {
     .cta {
         margin-left: 100px;
+        justify-content: center;
     }
 }
 
@@ -184,6 +198,13 @@ header .logo {
 @media( max-width: 800px ) {
     .cta {
         justify-content: center;
+    }
+}
+
+@media( max-width: 500px ) {
+    .cta {
+        justify-content: center;
+        margin-bottom: 90px;
     }
 }
 
@@ -229,13 +250,20 @@ header .logo {
 }
 
 @media( max-width: 800px ) {
+    .main-content .top-content .text-content {
+        margin: 5px;
+    }
+}
+
+@media( max-width: 500px ) {
     .main-content .top-content {
         flex-direction: column;
     }
 }
 
-@media( max-width: 800px ) {
+@media( max-width: 500px ) {
     .main-content .top-content .text-content {
+        margin: 0px;
         padding: 20px 0px;
     }
 }
@@ -249,13 +277,13 @@ header .logo {
     display: flex;
 }
 
-@media( max-width: 800px ) {
+@media( max-width: 500px ) {
     .main-content .bottom-content {
         flex-direction: column;
     }
 }
 
-@media( max-width: 800px ) {
+@media( max-width: 500px ) {
     .main-content .bottom-content .text-content {
         padding: 20px 0px;
     }
@@ -265,10 +293,22 @@ header .logo {
     padding-right: 20px;
 }
 
+@media( max-width: 500px ) {
+    .main-content .bottom-content p {
+        padding-right: 0px;
+    }
+}
+
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
+}
+
+@media( max-width: 500px ) {
+    .contact {
+        margin-top: 100px;
+    }
 }
 
 /* Footer Styles */
